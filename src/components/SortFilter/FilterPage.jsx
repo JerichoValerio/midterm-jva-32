@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
-//import {addGenres,removeFilter} from "../../reduxStore/sortFilter";
 import { fetchSort, fetchSortFilterDiscover,img_url} from '../../api';
 import ButtonCard from '../IconButtons/ButtonCard';
 import sliderSettings from '../Slider';
@@ -19,13 +18,7 @@ function FilterPage(props) {
     const [dateFrom, setDateFrom] = useState("");
     const [data, setData] = useState(false);
     const filtered=[];
-    // const sortQuery = useQuery(
-    //     ["SortData", sort,dateTo,dateFrom,genre_id],
-    //     () => fetchSort(dateTo,dateFrom,genre_id,sort),
-    //     {
-    //       retry: false,
-    //     }
-    //   );
+
       const sortQueryDiscover = useQuery(
         ["SortData", sort,dateTo,dateFrom,genre_id],
         () => fetchSortFilterDiscover(dateTo,dateFrom,genre_id,sort),
@@ -42,23 +35,6 @@ function FilterPage(props) {
 
     }
     const dataResults=sortQueryDiscover?.data?.data?.results;
-
-//   const SortData = useQuery(
-//     ["SortData", sort_date_to, sort_date_from, sort_genre, sort_choose],
-//     () => fetchSort(sort_date_to, sort_date_from, sort_genre, sort_choose),
-//     {
-//       retry: false,
-//     }
-//   );
-//   useEffect(() => {
-//     fetch(
-//       `https://api.themoviedb.org/3/movie/popular?api_key=2d20344e6f6a87e7e2ad84a103865cd9&sort_by=${sort}&release_date.gte=${dateFrom}&release_date.lte=${dateTo}&with_genres=${genre_id}`
-//     )
-//       .then((response) => response.json())
-//       .then((data) => {
-//         setData(data)
-//       });
-//   }, [dateTo, dateFrom, sort, genre_id]);
 
 
 

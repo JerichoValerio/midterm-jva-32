@@ -9,7 +9,6 @@ import ButtonCard from './IconButtons/ButtonCard';
 
 function Discover(props) {
   const [data, setData] = useState([]);
-  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const URL =Discover_URL ;
@@ -17,7 +16,6 @@ function Discover(props) {
       .then((response) => response.json())
       .then((json) => {
         setData(json);
-        // setLoading(false);
       });
   }, []);
   

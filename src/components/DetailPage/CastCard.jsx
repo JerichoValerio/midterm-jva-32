@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
  const Cast = styled.div`
-    
     display:inline-block;
     white-space:normal;
     margin: 4px;
@@ -38,6 +37,7 @@ import styled from "styled-components";
   const CrewCard = styled.div`
     
   display:inline-block;
+  
   white-space:normal;
   margin: 6px;
   vertical-align:middle;
@@ -45,7 +45,7 @@ import styled from "styled-components";
   border-radius: 6px;
   width:13rem;
   height:3rem;
-  background-color:#dfe4ea;
+  background-color:#323232;
   font-size:18px;
   `
 

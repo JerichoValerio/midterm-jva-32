@@ -1,3 +1,17 @@
 h1, p {
   font-family: Lato;
 }
+
+div {
+  background-color: #323232;
+  color: antiquewhite;
+}
+
+/* ul {
+  background-color: #323232;
+} */
+
+html {
+  background-color: #323232;
+}
+

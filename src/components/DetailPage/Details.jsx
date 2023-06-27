@@ -9,7 +9,6 @@ import Slider from "react-slick";
 import CastSliderSettings from "../CastSliderSettings";
 import {BiCameraMovie} from "react-icons/bi";
 
-//import { Card } from '@mui/material';
 const Details = (props) => {
     const { movieId } = useParams()
 
@@ -37,7 +36,6 @@ const Details = (props) => {
     return (
         <>
 
-            {/* <h1 className="d-flex justify-content-center">Detail Page</h1> */}
 
             <div className="container -fluid ">
                 <div className="container d-flex"  >
@@ -67,8 +65,8 @@ const Details = (props) => {
                                 <Cast key={item.id}>
                                     <img className="rounded" key={item} width={"100"} height={"150"} src={item.profile_path === null ? `https://tigres.com.tr/wp-content/uploads/2016/11/orionthemes-placeholder-image-1.png` : ` https://image.tmdb.org/t/p/w200${item?.profile_path}`} alt="" />
                                     <CastDescription>
-                                        <h6  style={{ color: "#2c3e50" }}><strong>{item.name}</strong></h6>
-                                        <h6  style={{ color: "#2c3e50" }}>Role:{item.character}</h6>
+                                        <h6  style={{ color: "antiquewhite" }}><strong>{item.name}</strong></h6>
+                                        <h6  style={{ color: "antiquewhite" }}>Role:{item.character}</h6>
                                     </CastDescription>
                                 </Cast>
                         )
@@ -80,7 +78,7 @@ const Details = (props) => {
             <div className='review-part'>
                 
                     <div className="col-sm-6">
-                     <p style={{ color: "#8e44ad" }}>
+                     <p style={{ color: "antiquewhite" }}>
                          <span>{reviewsData?.results[0]?.author[0].toUpperCase()}</span>
                          {
                             reviewsData?.results[0]?.author

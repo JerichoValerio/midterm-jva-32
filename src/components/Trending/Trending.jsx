@@ -61,7 +61,6 @@ function Trending(props) {
       <Slider {...sliderSettings}>
         { 
           data?.results?.map((item, index) => (
-            //console.log("dayItem", item),
             <div key={index} className="col-sm-4 mb-2">
               <ButtonCard/>
               <Link to={`/detail/${item.id} `} style={{ color:'#323232',textDecoration: 'none'}}>
@@ -79,14 +78,3 @@ function Trending(props) {
 
 export default Trending;
 
-
-
- // function handleDayButton() {
-  //   setButtonData(true);
-  //   return <DayTrending/>
-  // }
-
-  // function handleWeekButton() {
-  //   setButtonData(false);
-  //   return <WeekTrending/>
-  // }
