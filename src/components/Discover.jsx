@@ -22,7 +22,7 @@ function Discover(props) {
   console.log("data",data.results);
   return (
     <>
-      <h1 className='offset-1'>Discover</h1>
+      <h1 className='offset-1'>🔎Discover</h1>
       
       <div className="container-fluid row ">
       <Slider {...sliderSettings}>

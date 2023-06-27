@@ -38,7 +38,7 @@ function Trending(props) {
 
   return (
     <> <div>
-      <h1 className='offset-1 mb-2'>Trending
+      <h1 className='offset-1 mb-2'>📈Trending
         <Box
           sx={{
             display: 'inline',
